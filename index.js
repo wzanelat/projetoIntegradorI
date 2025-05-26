@@ -42,7 +42,6 @@ showLoginBtn.addEventListener('click', () => {
   registerMessage.textContent = '';
 });
 
-// Login
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = loginForm.email.value.trim();
@@ -71,7 +70,6 @@ loginForm.addEventListener('submit', (e) => {
     });
 });
 
-// Cadastro
 registerForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = registerForm['reg-email'].value.trim();
@@ -103,7 +101,6 @@ registerForm.addEventListener('submit', (e) => {
     });
 });
 
-// Recuperar senha
 forgotPasswordBtn.addEventListener('click', () => {
   const email = prompt("Digite seu e-mail para recuperar a senha:");
   if (email && email.includes('@')) {
