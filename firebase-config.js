@@ -1,4 +1,4 @@
-// Substitua as configurações abaixo pelas suas do Firebase
+
 const firebaseConfig = {
   apiKey: "AIzaSyCumfWK7absXyuQ_5XKCSy4IUz1BnQkKdk",
   authDomain: "projetointegrador1-a86b6.firebaseapp.com",
