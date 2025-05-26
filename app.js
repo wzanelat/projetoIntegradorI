@@ -10,7 +10,7 @@ loginBtn.addEventListener('click', () => {
 
   auth.signInWithEmailAndPassword(email, password)
     .then(userCredential => {
-      window.location.href = 'dashboard.html'; // redireciona para a área protegida
+      window.location.href = 'dashboard.html';
     })
     .catch(error => {
       messageP.textContent = error.message;
