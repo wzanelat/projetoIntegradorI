@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login / Cadastro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+</head>
+<body>
+  <div class="container login-container">
+    <p style="text-align: center; font-size: 42px; font-weight: 700; font-family:cursive;">Report Solidário</p>
+    <h1 style="font-family: cursive; font-size: 40px;">Bem-vindo</h1>
+    
+    <!-- Login -->
+    <form id="login-form">
+      <input type="email" id="email" placeholder="E-mail" required />
+      <input type="password" id="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+      <br>
+      <br>
+      <button type="button" id="forgot-password" class="secondary">Esqueci minha senha</button>
+      <p class="message" id="message"></p>
+      <p>Não tem conta? <button id="show-register">Cadastre-se</button></p>
+    </form>
+
+    
+
+    <!-- Cadastro -->
+    <form id="register-form" style="display:none;">
+      <input type="email" id="reg-email" placeholder="E-mail" required />
+      <input type="password" id="reg-password" placeholder="Senha" required minlength="6" />
+      <button type="submit">Cadastrar</button>
+      <p class="message" id="register-message"></p>
+      <p>Já tem conta? <button id="show-login" style="display:none;">Entrar</button></p>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
