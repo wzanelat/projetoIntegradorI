@@ -14,7 +14,6 @@ let map;
 let marker;
 let currentCoords = null;
 
-// Autenticação: redirecionar se não logado
 auth.onAuthStateChanged(user => {
   if (!user) {
     window.location.href = 'index.html';
@@ -28,7 +27,6 @@ logoutBtn.addEventListener('click', () => {
   });
 });
 
-// Inicializar mapa
 function initMap() {
   map = L.map('map').setView([-15.7942, -47.8822], 4);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -66,7 +64,6 @@ window.onload = () => {
   initMap();
 };
 
-// Envio do relato
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   statusMsg.style.color = 'black';
