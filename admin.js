@@ -3,9 +3,7 @@ const db = firebase.firestore();
 
 const relatosList = document.getElementById('relatos-list');
 const logoutBtn = document.getElementById('logout-btn');
-
-// Exemplo simples: só quem tem este email pode acessar
-const admins = ['admin@exemplo.com']; // Troque pelo seu e-mail de admin
+const admins = ['admin@exemplo.com'];
 
 auth.onAuthStateChanged(user => {
   if (!user) {
